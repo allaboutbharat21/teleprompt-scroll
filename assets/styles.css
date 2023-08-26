@@ -1,0 +1,48 @@
+#text-container {
+  height: 90vh;
+  overflow: hidden;
+  border: 1px solid #333;
+  scrollbar-width: none; /* Firefox */
+
+}
+
+#text-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+button img {
+  width: 32px;
+  height: 32px;
+}
+
+#scrolling-text {
+  position: relative;
+  top: 0;
+  animation: scroll 2000s linear 1;
+  white-space: pre-wrap;
+  font-size: 500%;
+}
+
+@keyframes scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  display: none; 
+  flex-grow: 1;
+}
+
+#menu {
+  margin-right: 10px; 
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}

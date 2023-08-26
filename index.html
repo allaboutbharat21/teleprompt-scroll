@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Text Scroller</title>
+</head>
+<body class="dark">
+<!-- svg icons from https://www.svgrepo.com-->
+<div id="app">
+
+  <div id="text-container">
+    <p id="scrolling-text"></p> 
+  </div>
+
+  <div class="icon-container">
+    <button id="menu" aria-label="Menu bar"><img src="assets/img/menu.svg"></button>
+
+    <div class="controls">
+      <button id="start" aria-label="Start scrolling"><img src="assets/img/play.svg"></button>
+      <button id="pause" aria-label="Pause scrolling"><img src="assets/img/pause.svg"></button>
+      
+      <button id="speed-up" aria-label="Speed up scrolling"><img src="assets/img/speedup.svg"></button>
+      <button id="speed-down" aria-label="Slow down scrolling"><img src="assets/img/speeddown.svg"></button>
+
+      <button id="light-mode" aria-label="light mode"><img src="assets/img/lightmode.svg"></button>
+      <button id="dark-mode" aria-label="dark mode"><img src="assets/img/darkmode.svg"></button>
+    </div>
+  </div>
+
+</div>
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
